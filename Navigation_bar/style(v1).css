@@ -1,0 +1,106 @@
+body{
+	background-color:#80B9C8;
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+	
+.navbar {
+	background-color:#247D7F;
+	display:flex;
+	justify-content:flex-end;
+	list-style-type:none;
+	border: 2px solid white;
+	
+	
+}
+.navbar li{
+	float:left;
+	
+}
+
+.navbar a {
+	display:block;
+	color:white;
+	padding:10px 14px;
+	text-decoration:none;
+	
+}
+.navbar a:hover{
+	background-color:#B2D9C4;
+	border-radius:4px;
+}
+.navbar input[type=text]{
+	background-color:#B2D9C4;
+	float:left;
+	width:300px;
+	padding:4px;
+	border:2px solid white;
+	border-radius:10px;
+	margin-top:8px;
+	margin-bottom:8px;
+	
+}
+.hamburger{
+	display:none;
+	cursor:pointer;
+	width:20px;
+	
+	
+}
+.hamburger .bar{
+	flex-basis:100%;
+	height:4px;
+	background-color:black;
+	margin:3px;
+}
+@media(max-width:768px){
+	nav{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.hamburger{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+	.logo{
+		height:80px;
+	}
+	.navbar{
+		display:none;
+		flex-basis:100%;
+		
+	}
+	.navbar.active{
+		display:block;
+	}
+	.navbar li{
+		display:block;
+		width:100%;
+		text-align:center;
+		
+	}
+	.navbar a{
+		display:block;
+		font-size:15px;
+		padding:10px;
+	}
+	.navbar a:hover{
+		background-color:#B2D9C4;
+	}
+
+}

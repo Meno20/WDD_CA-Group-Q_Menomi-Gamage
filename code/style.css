@@ -1,0 +1,220 @@
+body{
+	background-color:#80B9C8;
+	/*google font common to all text*/
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+
+/*NAVIGATION BAR*/
+/* The box, background-color for navbar*/
+.navbar {
+	background-color:#247D7F;
+	display:flex;
+	justify-content:flex-end;
+	list-style-type:none;/*Removing bullets from list*/
+	border: 2px solid white;
+}
+.navbar li{
+	float:left;/*align the list horizontally*/
+	
+}
+
+nav a {
+	display:block;
+	color:white;
+	padding:10px 14px;
+	text-decoration:none;/*remove default underline of links*/
+	
+}
+nav a:hover{
+	background-color:#B2D9C4;/*change colour when hovering*/
+	border-radius:4px;/*rounded ages when hovering*/
+}
+/*styling the search bar*/
+nav input[type=text]{
+	background-color:#B2D9C4;
+	float:left;
+	width:300px;
+	padding:4px;
+	border:2px solid white;
+	border-radius:10px;
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+/*SIDEBAR*/
+.sidebar{
+	list-style-type:none;
+	position:fixed;
+	top:0;
+	right:0;
+	height:100vh;
+	width:250px;
+	z-index:999;/*make always appear on top when elements overlap*/
+	background-color:#247D7F;
+	backdrop-filter:blur(10px);/*blurs the background when open*/
+	display:none;/*doesn't display on bigger screen sizes*/
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:flex-start;
+}
+.sidebar li{
+	width:100%;
+}
+.sidebar a{
+	width:100%;
+}
+.menu-button{
+	display:none;/*doestn't display icon when screen size is big*/
+}
+
+/*HEADINGS*/
+/*class for headings to use google fonts*/
+.stack-sans-notch-MG{
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align:center;
+}
+
+/*THREATS PAGE*/
+
+/*CARDS IN SECTION I*/
+/*add border around the paragraphs*/
+.box{
+	border:2px solid black;
+	text-align:center;
+	padding:5px;
+	background-color:white;
+
+}
+/*adds space at the bottom*/
+.col-sm-4{
+	margin-bottom:15px;
+}
+
+/*PARAGRAPHS IN SECTION II */
+.paragraphs_MG{
+	margin:20px;
+	text-align:justify;
+}
+
+
+.menu_MG{
+	border:2px solid white;
+	margin:20px;	
+	padding:15px;
+	text-align:center;
+	float:right;
+}
+.menu_MG li{
+	list-style-type:none;
+	margin:10px;
+	padding:20px;
+		
+}
+.menu_MG ul li a{
+	text-decoration:none;
+	color:black;
+}
+.menu_MG a:hover{
+	color:#f0f0f0;
+}
+.campaign1_MG{
+	float:left;
+	padding:10px;
+	margin:20px;
+}
+.campaign2_MG{
+	float:right;
+	padding:10px;
+	margin:20px;
+}
+.campaignp_MG{
+	text-align:justify;
+	margin:10px;
+}
+.mobile_MG{
+	display:none;
+}
+.input_MG{
+	margin-top:10px;
+}
+.submit_MG{
+	display:flex;
+	justify-content:center;
+	margin-bottom:20px;
+}
+
+/*FOOTER*/
+.footer{
+	background-color:#247D7F;
+	display: flex;
+	justify-content: center; /* centers the links horizontally */
+	align-items: center;
+	text-align:center;
+	border: 2px solid white;
+}
+.footer li{
+	float:left;
+	list-style-type:none;
+	
+}
+
+.footer ul li a {
+	display:block;
+	color:white;
+	padding:10px 14px;
+	text-decoration:none;
+	
+}
+
+
+/*diiferent styling for smaller screen size*/
+@media(max-width:800px){
+	/*hide the main navbar*/
+	.hideOnMobile{
+		display:none;
+	}
+	/*display hamburger icon*/
+	.menu-button{
+		display:block;
+	}
+	/*add space on top when screen size is ajusted*/
+	.col-sm-6{
+		margin-top:15px;
+	}
+	
+	.mobile_MG{
+		display:block;
+	}
+	.desktop_MG{
+		display:none;
+	}
+	.col{
+		border:2px solid black;
+		margin:10px;
+		padding:8px;
+		background-color:white;
+		text-align:center;
+	}
+	
+}
+
+
+

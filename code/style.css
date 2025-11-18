@@ -29,7 +29,7 @@ body{
 	border: 2px solid white;
 }
 .navbar li{
-	float:left;/*align the list horizontally*/
+	float:right;/*align the list horizontally*/
 	
 }
 
@@ -54,6 +54,11 @@ nav input[type=text]{
 	border-radius:10px;
 	margin-top:8px;
 	margin-bottom:8px;
+}
+.logo_MG img {
+    width:50px; /* Resize the logo to a smaller size */
+    height:auto; /* Maintain aspect ratio */
+
 }
 
 /*SIDEBAR*/
@@ -212,6 +217,9 @@ nav input[type=text]{
 		padding:8px;
 		background-color:white;
 		text-align:center;
+	}
+	.logo_MG{
+		margin-right:35px;
 	}
 	
 }

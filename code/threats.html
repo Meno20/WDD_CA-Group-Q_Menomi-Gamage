@@ -2,26 +2,34 @@
 <html>
 
 	<head>
+		<!--META TAGS -->
 		<title> Group Project - Threats Page</title>
 		<meta name="description" content="Threats towards the sustainability of life below water">
 		<meta name="keywords" content="sustainability, Life, Threats">
 		<meta name="author" content="Menomi Gamage">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Connecting gogle fonts-->
+		
+		<!--Connecting google fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+		
 		<!--connecting bootstrap-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">	
+		
+		<!--Javascript file extension link -->
+		<script src="jsForWebsite.js"></script>
+		
 		<!--custom styling sheet (override bootstrap)-->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="cssForWebsite.css">
 	
 	</head>
-	<body>
+	<body class="MG_Pages">
 		<!--Navigation bar-->
 		<nav>
+				
 			<ul class="sidebar">
-				<!-- JavaScript classes to make nav bar responsive and use of google icons to add hamburger-->
+				
 				<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 				<li><a href="home.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
@@ -33,20 +41,24 @@
 			</ul>
 			
 			<ul class="navbar">
-				<!--search tab in navigation-->
-				<input type="text" placeholder="Search..">
+				<li class="navLogo">
+					<a href="home.html">
+						<img src="websiteIcon.png" alt="Icon"><!--icon for website with the class name "navbar"--!>
+					</a>
+				</li>
+				<input type="text" placeholder="Search.." class="searchBar">
 				<li class="hideOnMobile"><a href="home.html">Home</a></li>
 				<li class="hideOnMobile"><a href="about.html">About</a></li>
 				<li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
 				<li class="hideOnMobile"><a href="nasa.html">NASA</a></li>
 				<li class="hideOnMobile"><a href="threats.html">Threats</a></li>
 				<li class="hideOnMobile"><a href="WhatWeCanDo.html">What we can do</a></li>
-				<!--JavaScript class and close icon from google icons-->
 				<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 					
 			</ul>
-					
+						
 		</nav>
+			
 		<!-- using bootstrap for layout of body-->
 		<div class="container">
 			<h1 class="stack-sans-notch-MG">Main Heading</h1>
@@ -165,22 +177,7 @@
 		</ul>
 		</div>
 	<!--JS for navbar reponsivness-->	
-	<script>
-		//function for showing sidebar//
-		function showSidebar(){
-			//select the class sidebar
-			const sidebar = document.querySelector('.sidebar')
-			//display sidebar when css display = flex//
-			sidebar.style.display ='flex'
-		}
-		//function for hidding in mobile version
-		function hideSidebar(){
-			const sidebar = document.querySelector('.sidebar')
-			//hide side bar when display = none//
-			sidebar.style.display ='none'
-		}
-		
-	</script>
+	
 	<!-- bootstrap JS link-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	

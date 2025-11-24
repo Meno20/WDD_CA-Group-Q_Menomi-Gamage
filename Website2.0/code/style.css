@@ -1,0 +1,668 @@
+/*NAVIGATION BAR*/
+/* The box, background-color for navbar*/
+.navbar {
+	background-color:#247D7F;
+}
+.group-navbar .nav-link {
+     color:white; 
+}
+.group-btn{
+	color:white;
+}
+/*-----------------------------*/
+/*HOME PAGE:*/
+/*-- Hande Eda Ozdemir --*/
+/*-----------------------------*/
+
+/*BACKGROUND_*/
+body.edaPages{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("background1.jpg");/*rgba's makes background to look darker*/
+	background-repeat: no-repeat;/*so that the background doesnt repeat itself as an img*/
+	background-size: cover;/*covers the whole page*/
+	background-attachment: fixed;/*when you scroll down background stays at the same position*/
+}
+
+/*HEADING_*/
+
+.homePageH{
+	color:#247D7F;
+	margin: 80px 30px 30px 30px;/*top right bottom left*/
+	font-size: 70px;
+	text-align: center;/*text gets displayed in center*/
+	
+	/*FONT*/
+	font-family: "Stack Sans Notch", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 70px;
+	font-style: normal;
+}
+
+span{
+	color:#247D7F;
+	display: block;/*just gets the element not the whole row*/
+}
+
+/*EXPLORE BUTTON_*/
+
+#exploreButton{
+	margin: 40px auto 30px auto;/*makes right and left margin auto which helps it to center the content.*/
+	text-align: center;
+	display: block;
+	text-decoration:none;/*line under the link disapears*/
+	color:white;
+	background-color:black;
+	border-radius: 5px;
+	border:1px solid black;
+	padding: 14px 25px;
+	width: fit-content;/*fits the content in a box. ex, border would be just around the element, not whole row*/
+	
+	/*FONT*/
+	font-family: "Barlow", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+
+}
+
+#exploreButton:hover{/*when you hover on the link with the mouse, it uses the css below.*/
+	background-color:#80B9C8;
+
+}
+/*ABOUT PAGE:*/
+
+/*group of images 1_*/
+
+.content-card {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	color: white;
+}
+
+.aboutImgP { 
+	margin:0;
+	color:white;
+	
+	/*FONTS*/
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+
+/*-----------------------------*/
+
+/*group of content 1_*/
+
+
+/* Headings */
+.aboutPageH1,
+.aboutPageH2{
+	color:#247D7F;
+	font-family: "Stack Sans Notch", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+/* Paragraphs/Lists */
+.aboutPageP,
+.aboutPageP2{
+	color:white;
+	text-align:left;
+	
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+
+/* Image captions */
+.aboutImgP,
+.aboutImgP2 { 
+	margin:0;
+	color:white;
+	
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+
+/* Hover effects - OPTIONAL */
+.hovering,
+.hovering2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+.hovering p,
+.hovering2 p {
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+/* Parent container needs position relative */
+.img-container {
+	position: relative;
+}
+
+.img-container:hover .hovering,.img-container:hover .hovering2 {
+	opacity: 1;
+}
+
+/* Author name */
+#authorName {
+	color: #247D7F;
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Stack Sans Notch", sans-serif;
+}
+/*-----------------------------*/
+/*--MENOMI--*/
+/* Threats and what we can do pages*/
+
+/* -- BODY FOR WHAT WE CAN DO PAGE --*/
+body.MG_Pages {
+	background-color:white;
+	/*google font common to all text*/
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight:semi-bold;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+/* -- BODY FOR THEATS PAGE --*/
+body.MG_Threatspg {
+	background-color:#03002e;
+	/*google font common to all text*/
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight:semi-bold;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0,
+		"wdth" 100,
+		"GRAD" 0,
+		"XOPQ" 96,
+		"XTRA" 468,
+		"YOPQ" 79,
+		"YTAS" 750,
+		"YTDE" -203,
+		"YTFI" 738,
+		"YTLC" 514,
+		"YTUC" 712;
+}
+
+/*HEADINGS*/
+/*class for headings to use google fonts*/
+.stack-sans-notch-MG{
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:semi-bold;
+  font-style: normal;
+  text-align:center;
+  color:white;
+}
+
+/*THREATS PAGE*/
+
+/*CARDS IN SECTION I*/
+/*add border around the paragraphs*/
+.box_MG{
+	border:2px solid black;
+	text-align:center;
+	padding:5px;
+	margin-top:20px;
+	margin-bottom:15px;
+	background-image:url('box_bg_MG.jpg');
+
+}
+.box_MG:hover{
+	box-shadow:4px 4px #C29470;
+	border-radius:3px;
+}
+
+/*text linking cards to paragraphs */
+.links_MG{
+	text-decoration:none;
+	color:black;
+	border:2px solid #C29470;
+	padding:4px;
+}
+
+/*PARAGRAPHS IN SECTION II */
+.stack-sans-notch-MG-threats{
+	font-family: "Stack Sans Notch", sans-serif;
+	font-optical-sizing: auto;
+	font-weight:semi-bold;
+	font-style: normal;
+	text-align:left;
+}
+.sectionII_MG{
+	background-color:white;
+}
+.paragraphs_MG{
+	margin:20px;
+	text-align:justify;
+}
+.mobile_MG{
+	display:none;/* Hides mobile version */
+}
+
+/*--- WHAT WE CAN DO page ---*/
+/* add different background for headings part */
+.headings_MG{
+	background-image:url('sea_MG.jpg');
+}
+/* -- FIRST SECTION OF PAGE -- */
+.sectionI_what_MG{
+	background-color:white; /* -- campaigns section with white background -- */
+	color:black;
+	padding:10px;
+	margin-bottom:8px;
+}
+
+/*side menu in the right side of page*/
+.menu_MG{
+	border:2px solid white;
+	margin:10px;	
+	padding:8px;
+	text-align:center;
+	float:right;
+}
+.menu_MG li{
+	list-style-type:none;
+	margin:10px;
+	padding:15px;
+		
+}
+.menu_MG ul li a{
+	text-decoration:none;
+	color:black;
+}
+.menu_MG a:hover{
+	border:0.5px solid #C29470;
+	border-radius:5px;
+	padding:8px;
+	margin:4px;
+	box-shadow:3px 3px  #C29470;
+}
+
+/*-- SECOND PART OF PAGE -- */
+.sectionII_what_MG{
+	background-image:url('coral_bg_MG.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.stack-sans-notch-sw-MG{
+	font-family: "Stack Sans Notch", sans-serif;
+	font-optical-sizing: auto;
+	font-weight:semi-bold;
+	font-style: normal;
+	text-align:center;
+	color:black;
+}
+/*-- images that align left --*/
+.campaign1_MG{
+	float:left;
+	padding:10px;
+	margin:20px;
+	width:30%;
+}
+/*-- linked image in first campaign --*/
+.campaign1_center_MG{
+	display: block;
+	margin: auto;
+	width:20%;
+}
+/* -- images that align right --*/
+.campaign2_MG{
+	float:right;
+	padding:10px;
+	margin:20px;
+	width:30%
+}
+/* -- project images in second campaign -- */
+.campaign2_center_MG{
+	width:20%;
+	margin:10px;
+}
+
+/* -- Information paragraphs -- */
+.campaignp_MG{
+	text-align:justify;
+	margin:10px;
+}
+
+/* -- Styling for form -- */
+.input_MG{
+	margin-top:10px;
+	margin-bottom:10px;
+	
+}
+.custom-control-label{
+	color:white;
+}
+.submit_MG{
+	display:flex;
+	justify-content:center;
+	margin-bottom:20px;
+	
+}
+.form-btn-MG{
+	background-color:#03002e;
+	margin-bottom:5px;
+}
+/* -- END -- */
+
+/*--Htet Oo Khin Pages--*/
+
+/*HTET OO KHIN*/
+body.HOK-page{
+	background-color: #80B9C8;
+}
+
+.gallery-img {
+	width: 100%; /*make image fill its container */
+	height: auto; /* Maintain a spect ratio */
+	
+}
+
+.nasa-img {
+	width: 100%; /*make image fill its container */
+	height: auto; /* Maintain a spect ratio */
+}
+
+.navlogoHOK {
+	text-align: center;
+	padding: 20px 0;
+}
+.navlogoHOK img{
+	max-width: 180px;
+	width: 100%;
+	height: auto;
+}
+
+.form {
+	background-image: url("background/bg.png");
+	font-family: "Roboto Flex", sans-serif;
+	font-size: auto;
+	font-style: normal;
+}
+
+.btn btn-primary {
+	position: centre;
+}
+
+/*NASA bg*/
+.bg-img1 {
+	background-image:url("nasabgHOK.jpg");
+	background-size: auto;
+	background-position: center;
+	background-repeat: repeat;
+	min-height: 400px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	border: 3px solid blue;
+	color: black;
+}
+/*gallery bg*/
+.bg-img {
+	background-image:url("bgHOK.jpg");
+	/*background-color: mediumblue;*/
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 400px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	border: 3px solid blue;
+	color: black;
+}
+
+/*nasa img*/
+#imgRight {
+	float: right;
+	margin-right: 40px;
+	width: 100%; /*make image fill its container */
+	height: auto; /* Maintain a spect ratio */
+}
+
+#imgLeft {
+	float: left;
+	margin-left: 40px;
+	width: 100%; /*make image fill its container */
+	height: auto; /* Maintain a spect ratio */
+}
+
+
+
+.nasaHeading {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: 50px;
+	font-style: normal;
+	text-align: center;
+		
+}
+
+.moto {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	color: #555;
+	margin: 20px auto;
+	padding: 0 20px;
+	max-width: 800px;
+}
+
+
+.captionText {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: auto;
+	font-style: normal;
+	text-align: left;
+	
+}
+
+.nasaText {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: auto;
+	font-style: normal;
+	text-align: left;
+	padding: 30px;
+	background: blue;
+	box-shadow: 0 4px 6px rgba (0,0,0,0.1);
+	margin-bottom: 40px;
+}
+
+/*FOOTER*/
+.footer{
+	background-color:#247D7F;
+	display: flex;
+	justify-content: center; /* centers the links horizontally */
+	align-items: center;
+	text-align:center;
+	border: 2px solid white;
+	bottom:0;
+}
+.footer li{
+	float:left;
+	list-style-type:none;
+	
+}
+
+.footer ul li a {
+	display:block;
+	color:white;
+	padding:10px 14px;
+	text-decoration:none;
+	
+}
+.logo{
+	width:3%;
+	float:left;
+	margin-right:20px;
+}
+/*-----------------------------*/
+/*MEDIA TAGS FOR WEBSITES*/
+/*for phones*/
+@media only screen and (max-width:600px){
+	/*NAVBAR_*/
+	
+	nav input[type=text]{
+		width: 180px;
+		padding: 4px;
+	}
+	
+	/* Heading mobile */
+	.homePageH {
+		font-size: 50px;
+		margin: 50px 20px 20px 20px;
+	}
+	
+	span{
+		font-size:30px;
+	}
+	
+	/* About page font sizes */
+	.aboutPageH1,
+	.aboutPageH2 {
+		font-size: 20px;
+	}
+
+	.aboutPageP,
+	.aboutPageP2 {
+		font-size: 12px;
+	}
+	
+	/* Explore button mobile */
+	#exploreButton {
+		padding: 12px 20px;
+		font-size: 14px;
+	}
+	
+	/* Hover effects on mobile */
+	.hovering,
+	.hovering2 {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	/* -- MENOMI -- */
+	
+	/* --- THREATS PAGE --- */
+	/*add space on top when screen size is ajusted*/
+	.col-sm-6{
+		margin-top:15px;
+	}
+	/*Adjusting screen layout for mobile display*/
+	.mobile_MG{
+		display:block;
+	}
+	.desktop_MG{
+		display:none;
+	}
+	/*fixing text size inside linked card*/
+	.mobile_links_MG{
+		font-size:10px;
+		text-decoration:none;
+		color:black;
+	}
+	/* --- WHAT WE CAN DO PAGE --- */
+	/*columns for form*/
+	.col{
+		border:2px solid black;
+		margin:10px;
+		padding:8px;
+		background-color:white;
+		text-align:center;
+	}
+	.campaign1_center_MG{
+		width:50%;
+	}
+	.campaign1_MG{
+		width:40%;
+	}
+	.campaign2_MG{
+		width:40%;
+	}
+	/* -- END -- */
+}	
+/* Mobile size */
+@media (max-width: 768px) {
+    .navlogoHOK img {
+        max-width: 120px;
+    }
+    .navlogoHOK img{
+        padding: 15px 0; /* Less padding on mobile */
+    }
+}
+
+/* Small mobile */
+@media (max-width: 576px) {
+    .navlogoHOK img {
+        max-width: 80px;
+    }
+}

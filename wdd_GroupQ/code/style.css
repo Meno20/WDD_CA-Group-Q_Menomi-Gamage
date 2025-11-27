@@ -610,6 +610,7 @@ body.HOK-page{
 	.hovering2 {
 		background-color: rgba(0, 0, 0, 0.8);
 	}
+	
 	/* -- MENOMI -- */
 	
 	/* --- THREATS PAGE --- */
@@ -649,7 +650,9 @@ body.HOK-page{
 		width:40%;
 	}
 	/* -- END -- */
-}	
+}
+
+/*-- Htet Oo Khin --*/	
 /* Mobile size */
 @media (max-width: 768px) {
     .navlogoHOK img {

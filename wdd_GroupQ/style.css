@@ -209,7 +209,7 @@ span{
 /* Threats and what we can do pages*/
 
 /* -- BODY FOR WHAT WE CAN DO PAGE --*/
-body.mg_pages {
+body.MG_Pages {
 	background-color:white;
 	/*google font common to all text*/
 	font-family: "Roboto Flex", sans-serif;
@@ -230,7 +230,7 @@ body.mg_pages {
 		"YTUC" 712;
 }
 /* -- BODY FOR THEATS PAGE --*/
-body.mg-threatspg {
+body.MG_Threatspg {
 	background-color:#03002e;
 	/*google font common to all text*/
 	font-family: "Roboto Flex", sans-serif;
@@ -253,7 +253,7 @@ body.mg-threatspg {
 
 /*HEADINGS*/
 /*class for headings to use google fonts*/
-.stack-sans-notch-mg{
+.stack-sans-notch-MG{
   font-family: "Stack Sans Notch", sans-serif;
   font-optical-sizing: auto;
   font-weight:semi-bold;
@@ -266,7 +266,7 @@ body.mg-threatspg {
 
 /*CARDS IN SECTION I*/
 /*add border around the paragraphs*/
-.box-mg{
+.box_MG{
 	border:2px solid black;
 	text-align:center;
 	padding:5px;
@@ -275,13 +275,13 @@ body.mg-threatspg {
 	background-image:url('box_bg_MG.jpg');
 
 }
-.box-mg:hover{
+.box_MG:hover{
 	box-shadow:4px 4px #C29470;
 	border-radius:3px;
 }
 
 /*text linking cards to paragraphs */
-.links-mg{
+.links_MG{
 	text-decoration:none;
 	color:black;
 	border:2px solid #C29470;
@@ -289,43 +289,31 @@ body.mg-threatspg {
 }
 
 /*PARAGRAPHS IN SECTION II */
-.stack-sans-notch-mg-threats{
+.stack-sans-notch-MG-threats{
 	font-family: "Stack Sans Notch", sans-serif;
 	font-optical-sizing: auto;
 	font-weight:semi-bold;
 	font-style: normal;
 	text-align:left;
 }
-.sectionII-mg{
+.sectionII_MG{
 	background-color:white;
 }
-.paragraphs-mg{
+.paragraphs_MG{
 	margin:20px;
 	text-align:justify;
 }
-.mobile-mg{
+.mobile_MG{
 	display:none;/* Hides mobile version */
 }
 
 /*--- WHAT WE CAN DO page ---*/
 /* add different background for headings part */
-header.headings-mg{
-	position:relative;
+.headings_MG{
 	background-image:url('sea_MG.jpg');
-	background-size:cover;
-	background-position:center;
-	height:50vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	color:white:
 }
-.header-content{
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
 /* -- FIRST SECTION OF PAGE -- */
-.sectionI-what-mg{
+.sectionI_what_MG{
 	background-color:white; /* -- campaigns section with white background -- */
 	color:black;
 	padding:10px;
@@ -333,77 +321,39 @@ header.headings-mg{
 }
 
 /*side menu in the right side of page*/
-.menu-mg{
-	border:2px solid #C29470;
+.menu_MG{
+	border:2px solid white;
 	margin:10px;	
 	padding:8px;
 	text-align:center;
 	float:right;
 }
-.menu-mg li{
+.menu_MG li{
 	list-style-type:none;
 	margin:10px;
 	padding:15px;
 		
 }
-.menu-mg ul li a{
+.menu_MG ul li a{
 	text-decoration:none;
 	color:black;
 }
-.menu-mg a:hover{
+.menu_MG a:hover{
 	border:0.5px solid #C29470;
 	border-radius:5px;
 	padding:8px;
 	margin:4px;
 	box-shadow:3px 3px  #C29470;
 }
-/*-- images that align left --*/
-.campaign1-mg{
-	float:left;
-	padding:10px;
-	margin-left:20px;
-	width:30%;
-}
-/*-- linked image in first campaign --*/
-.campaign1-center-mg{
-	display: block;
-	margin: auto;
-	width:20%;
-}
-/* -- spurce:https://www.w3docs.com/snippets/css/how-to-zoom-images-and-background-images-on-hover.html -- */
-.campaign1-center-mg:hover{
-	transform:scale(1.1);
-	box-shadow:3px 3px #03002e;
-}
-/* -- images that align right --*/
-.campaign2-mg{
-	float:right;
-	padding:10px;
-	width:30%;
-	height:30%;
-}
-/* -- project images in second campaign -- */
-.campaign2-center-mg{
-	width:20%;
-	margin:10px;
-}
-.campaign2-center-mg:hover{
-	transform:scale(1.1);
-	box-shadow:3px 3px #03002e;
-}
-
-/* -- Information paragraphs -- */
-.campaignp-mg{
-	text-align:justify;
-	margin:10px;
-}
 
 /*-- SECOND PART OF PAGE -- */
-.sectionII-what-mg{
+.sectionII_what_MG{
 	background-image:url('coral_bg_MG.jpg');
 	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
-.stack-sans-notch-sw-mg{
+.stack-sans-notch-sw-MG{
 	font-family: "Stack Sans Notch", sans-serif;
 	font-optical-sizing: auto;
 	font-weight:semi-bold;
@@ -411,9 +361,40 @@ header.headings-mg{
 	text-align:center;
 	color:black;
 }
+/*-- images that align left --*/
+.campaign1_MG{
+	float:left;
+	padding:10px;
+	margin:20px;
+	width:30%;
+}
+/*-- linked image in first campaign --*/
+.campaign1_center_MG{
+	display: block;
+	margin: auto;
+	width:20%;
+}
+/* -- images that align right --*/
+.campaign2_MG{
+	float:right;
+	padding:10px;
+	margin:20px;
+	width:30%
+}
+/* -- project images in second campaign -- */
+.campaign2_center_MG{
+	width:20%;
+	margin:10px;
+}
+
+/* -- Information paragraphs -- */
+.campaignp_MG{
+	text-align:justify;
+	margin:10px;
+}
 
 /* -- Styling for form -- */
-.input-mg{
+.input_MG{
 	margin-top:10px;
 	margin-bottom:10px;
 	
@@ -421,13 +402,13 @@ header.headings-mg{
 .custom-control-label{
 	color:white;
 }
-.submit-mg{
+.submit_MG{
 	display:flex;
 	justify-content:center;
 	margin-bottom:20px;
 	
 }
-.form-btn-mg{
+.form-btn-MG{
 	background-color:#03002e;
 	margin-bottom:5px;
 }
@@ -629,7 +610,6 @@ body.HOK-page{
 	.hovering2 {
 		background-color: rgba(0, 0, 0, 0.8);
 	}
-	
 	/* -- MENOMI -- */
 	
 	/* --- THREATS PAGE --- */
@@ -638,57 +618,19 @@ body.HOK-page{
 		margin-top:15px;
 	}
 	/*Adjusting screen layout for mobile display*/
-	.mobile-mg{
+	.mobile_MG{
 		display:block;
 	}
-	.desktop-mg{
+	.desktop_MG{
 		display:none;
 	}
 	/*fixing text size inside linked card*/
-	.mobile-links-mg{
+	.mobile_links_MG{
 		font-size:10px;
 		text-decoration:none;
 		color:black;
 	}
 	/* --- WHAT WE CAN DO PAGE --- */
-	.menu-mg{
-		margin:3px;
-		padding:3px;
-	}	
-	.menu-mg li{
-		border:2px solid #44916F;
-		border-radius:8px;
-		padding:8px;
-		float:left;
-	}
-	/* -- Overriding hover effects --*/
-	.menu-mg a:hover{
-	border:0;
-	border-radius:0;
-	padding:0;
-	margin:0;
-	box-shadow:none;
-	}
-	.campaignp-mg{
-		float:right;
-	}
-	.campaign1-center-mg{
-		width:50%;
-	}
-	.campaign1-mg{
-		width:90%;
-	}
-	.campaign2-mg{
-		width:90%;
-	}
-	.campaign2-center-mg{
-		width:40%;
-	}
-	header.form-headings h2,header.form-headings h3  {
-		color:white;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-		
-	}
 	/*columns for form*/
 	.col{
 		border:2px solid black;
@@ -697,10 +639,17 @@ body.HOK-page{
 		background-color:white;
 		text-align:center;
 	}
+	.campaign1_center_MG{
+		width:50%;
+	}
+	.campaign1_MG{
+		width:40%;
+	}
+	.campaign2_MG{
+		width:40%;
+	}
 	/* -- END -- */
-}
-
-/*-- Htet Oo Khin --*/	
+}	
 /* Mobile size */
 @media (max-width: 768px) {
     .navlogoHOK img {

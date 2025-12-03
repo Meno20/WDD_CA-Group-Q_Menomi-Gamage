@@ -272,18 +272,54 @@ body.mg-threatspg {
 	padding:5px;
 	margin-top:20px;
 	margin-bottom:15px;
-	background-image:url('box_bg_MG.jpg');
+	
 
 }
 .box-mg:hover{
 	box-shadow:4px 4px #C29470;
 	border-radius:3px;
+
+}
+/*-- source:https://unsplash.com/s/photos/fishing-boat -- */
+.fishbox-mg{
+	background-image:url('overfishing_mg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:white;
+}
+/* -- source:https://www.pexels.com/photo/underwater-photography-of-coral-reef-in-water-3635910/ --*/
+.lossbox-mg{
+	background-image:url('habitat_mg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:white;
+}
+/* -- source:https://www.freepik.com/search?format=search&last_filter=query&last_value=invasive+marine+species&query=invasive+marine+species --*/
+.inbox-mg{
+	background-image:url('ins_mg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:white;
+}
+/* -- source:https://www.freepik.com/free-photos-vectors/marine-habitat-destruction/2#uuid=f5d0a019-b763-4242-986a-2f4140703f23 --*/
+.pollution-mg{
+	background-image:url('pollution_mg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:white;
+}
+/* -- source:https://www.freepik.com/free-photos-vectors/texture-water -- */
+.acid-mg{
+	background-image:url('acid_mg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:white;
 }
 
 /*text linking cards to paragraphs */
 .links-mg{
 	text-decoration:none;
-	color:black;
+	color:white;
 	border:2px solid #C29470;
 	padding:4px;
 }
@@ -430,6 +466,21 @@ header.headings-mg{
 .form-btn-mg{
 	background-color:#03002e;
 	margin-bottom:5px;
+}
+/* Red border when invalid */
+input.invalid, select.invalid{
+    border:2px solid red;
+}
+
+/* Green border when valid */
+input.valid, select.valid{
+    border:2px solid green;
+}
+
+/* Red error message text */
+.error-message{
+    color:red;
+    font-size:0.9em;
 }
 /* -- END -- */
 
@@ -648,7 +699,7 @@ body.HOK-page{
 	.mobile-links-mg{
 		font-size:10px;
 		text-decoration:none;
-		color:black;
+		color:white;
 	}
 	/* --- WHAT WE CAN DO PAGE --- */
 	.menu-mg{

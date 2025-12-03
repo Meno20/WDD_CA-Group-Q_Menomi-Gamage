@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 		<!-- META TAGS -->
@@ -7,6 +7,7 @@
 		<meta name="description" content="Threats towards the sustainability of life below water">
 		<meta name="keywords" content="sustainability, Life, Threats, campaigns">
 		<meta name="author" content="Menomi Gamage">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!--Connecting google fonts-->
@@ -79,7 +80,8 @@
 					<h1 class="stack-sans-notch-mg">Our Oceans, Our Livelihood</h1>
 					<h3 class="stack-sans-notch-mg">The SEAS ALIVE, HELP THEM THRIVE</h3>
 				</div>
-			</header>	
+			</header>
+		<div class="container-fluid">	
 			<section class="sectionI-what-mg">	
 				<!-- side menu to navigate campaigns-->
 				<div class="menu-mg">
@@ -113,7 +115,7 @@
 					</a>
 				</div>
 				<hr>
-			<div class="container-fluid">		
+				
 				<!-- second divison of information-->	
 				<div id="campaignspro-mg">
 					<h3 class="stack-sans-notch-mg-threats">Reefolution</h3>
@@ -194,30 +196,36 @@
 				<div class="container">
 					
 					<!-- form for receving further info-->
-					<form>
+					<form onsubmit="return validateForm()" >
 						<div class="row">
 							<div class="col">
-							  <input type="text" class="form-control" placeholder="First name">
+							  <input type="text" id="fname" class="form-control" placeholder="First name">
+							  <span id="fname-error" class="error-message"></span>			
 							</div>
 							<div class="col">
-							  <input type="text" class="form-control" placeholder="Last name">
+							  <input type="text" id="lname" class="form-control" placeholder="Last name">
+							  <span id="lname-error" class="error-message"></span>
 							</div>
 						</div>	
 						<div class="input-mg">
 							<div class="col">
-							  <input type="text" class="form-control" placeholder="Email Address">
+							  <input type="text" id="email" class="form-control" placeholder="Email Address">
+							  <span id="email-error" class="error-message"></span>
 							</div>
 						</div>
-						
-							<select class="form-select form-select-sm" aria-label="Small select example">
+						<div>
+							<select id="country" class="form-select form-select-sm" aria-label="Small select example">
 							  <option selected>Choose country</option>
 							  <option value="1">Ireland</option>
 							  <option value="2">UK</option>
 							  <option value="3">Canada</option>
 							</select>
+							<span id="country-error" class="error-message"></span>
+						</div>	
 						<div class="custom-control custom-checkbox">
 							<input type="checkbox" class="custom-control-input" id="customCheck1">
 							<label class="custom-control-label" for="customCheck1">Check to agree for privacy policy</label>
+							<span id="agree-error" class="error-message"></span>
 						</div>
 						<div class="submit-mg">
 							<input class="btn btn-primary form-btn-mg" type="submit" value="Submit">

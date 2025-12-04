@@ -282,35 +282,35 @@ body.mg-threatspg {
 }
 /*-- source:https://unsplash.com/s/photos/fishing-boat -- */
 .fishbox-mg{
-	background-image:url('overfishing_mg.jpg');
+	background-image:url('img-mg/overfishing_mg.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	color:white;
 }
 /* -- source:https://www.pexels.com/photo/underwater-photography-of-coral-reef-in-water-3635910/ --*/
 .lossbox-mg{
-	background-image:url('habitat_mg.jpg');
+	background-image:url('img-mg/habitat_mg.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	color:white;
 }
 /* -- source:https://www.freepik.com/search?format=search&last_filter=query&last_value=invasive+marine+species&query=invasive+marine+species --*/
 .inbox-mg{
-	background-image:url('ins_mg.jpg');
+	background-image:url('img-mg/ins_mg.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	color:white;
 }
 /* -- source:https://www.freepik.com/free-photos-vectors/marine-habitat-destruction/2#uuid=f5d0a019-b763-4242-986a-2f4140703f23 --*/
 .pollution-mg{
-	background-image:url('pollution_mg.jpg');
+	background-image:url('img-mg/pollution_mg.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	color:white;
 }
 /* -- source:https://www.freepik.com/free-photos-vectors/texture-water -- */
 .acid-mg{
-	background-image:url('acid_mg.jpg');
+	background-image:url('img-mg/acid_mg.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	color:white;
@@ -347,7 +347,7 @@ body.mg-threatspg {
 /* add different background for headings part */
 header.headings-mg{
 	position:relative;
-	background-image:url('sea_MG.jpg');
+	background-image:url('img-mg/sea_MG.jpg');
 	background-size:cover;
 	background-position:center;
 	height:50vh;
@@ -406,7 +406,7 @@ header.headings-mg{
 	margin: auto;
 	width:20%;
 }
-/* -- spurce:https://www.w3docs.com/snippets/css/how-to-zoom-images-and-background-images-on-hover.html -- */
+/* -- source:https://www.w3docs.com/snippets/css/how-to-zoom-images-and-background-images-on-hover.html -- */
 .campaign1-center-mg:hover{
 	transform:scale(1.1);
 	box-shadow:3px 3px #03002e;
@@ -435,9 +435,12 @@ header.headings-mg{
 }
 
 /*-- SECOND PART OF PAGE -- */
+
+/*-- source:https://www.freepik.com/free-ai-image/underwater-coral-reef-scene-with-sunlight_419671392.htm#fromView=search&page=1&position=19&uuid=aa3519d3-24f1-41bd-a8bd-4d7958b1a80c&query=coral+reef -- */
 .sectionII-what-mg{
-	background-image:url('coral_bg_MG.jpg');
+	background-image:url('img-mg/coral_bg_MG.jpg');
 	background-repeat: no-repeat;
+	background-size:cover;
 }
 .stack-sans-notch-sw-mg{
 	font-family: "Stack Sans Notch", sans-serif;

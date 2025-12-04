@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 		<!-- META TAGS -->
@@ -7,6 +7,7 @@
 		<meta name="description" content="Threats towards the sustainability of life below water">
 		<meta name="keywords" content="sustainability, Life, Threats, campaigns">
 		<meta name="author" content="Menomi Gamage">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!--Connecting google fonts-->
@@ -26,10 +27,10 @@
 	</head>
 	<body class="mg-pages">
 		<!--Navigation bar-->
-		<nav class="navbar navbar-expand-lg group-navbar **py-1**">
+		<nav class="navbar navbar-expand-lg group-navbar py-1">
 			<div class="container-fluid d-flex align-items-center">
 
-				<a class="navbar-brand **me-auto**" href="index.html">
+				<a class="navbar-brand me-auto" href="index.html">
 				  <img src="websiteIcon.png" alt="logo" width="30" height="34">
 				</a>
 
@@ -79,7 +80,8 @@
 					<h1 class="stack-sans-notch-mg">Our Oceans, Our Livelihood</h1>
 					<h3 class="stack-sans-notch-mg">The SEAS ALIVE, HELP THEM THRIVE</h3>
 				</div>
-			</header>	
+			</header>
+		<div class="container-fluid">	
 			<section class="sectionI-what-mg">	
 				<!-- side menu to navigate campaigns-->
 				<div class="menu-mg">
@@ -98,7 +100,7 @@
 					<h3 class="stack-sans-notch-mg-threats">Parlimentaries for Global Action</h3>
 				<!--image related to campaign ets-->
 				<!-- source:https://www.freepik.com/free-photos-vectors/ocean -->
-					<img class="campaign1-mg" src="beach_mg.jpg" alt="img">
+					<img class="campaign1-mg" src="img-mg/beach_mg.jpg" alt="ariel view of ocean">
 					<p class="campaignp-mg">Oceans play a vital role in sustaining life on Earth—regulating climate, supporting biodiversity, and providing essential resources such as food and energy. 
 					Yet, our oceans are under threat from pollution, overfishing, and the impacts of climate change.
 					These challenges endanger marine ecosystems and the livelihoods of billions of people who depend on healthy oceans.
@@ -109,15 +111,15 @@
 					</p>
 					<a href="https://www.pgaction.org/hre/oceans.html" target="_blank">
 					<!-- source:https://unsplash.com/photos/red-and-blue-cargo-ship-on-body-of-water-during-daytime-NndKt2kF1L4-->
-						<img class="campaign1-center-mg" src="ship_mg.jpg" alt="img">
+						<img class="campaign1-center-mg" src="img-mg/ship_mg.jpg" alt="image of oil ship,harbour ">
 					</a>
 				</div>
 				<hr>
-			<div class="container-fluid">		
+				
 				<!-- second divison of information-->	
 				<div id="campaignspro-mg">
 					<h3 class="stack-sans-notch-mg-threats">Reefolution</h3>
-					<img class="campaign2-mg" src="reef_mg.jpg" alt="img">
+					<img class="campaign2-mg" src="img-mg/reef_mg.jpg" alt="image of coral reef below water">
 					<p class="campaignp-mg">Reefolution works to restore and protect marine ecosystems, focusing on coral reefs and their vital role in ocean health. 
 					Their approach involves the use of innovative techniques such as coral farming, outplanting, and the restoration of degraded reefs to enhance biodiversity and support local economies.
 					By partnering with communities, governments, and scientific organizations, Reefolution is dedicated to ensuring that coral reefs thrive in the face of climate change and human impact. 
@@ -126,11 +128,11 @@
 					<h4 class="pro-heading-mg">Projects</h4>
 						<a href="https://reefolution.org/how-we-work/?gad_source=1&gad_campaignid=22541618334&gbraid=0AAAAAqN69rBFp_tFfUfK8TvbKyljoPU2u&gclid=CjwKCAiA24XJBhBXEiwAXElO36Ue-aDgZOtkRqs-CeRCLI5YFNNqqRePVt5UZ2GNYt6Vz_pj8FJ14hoCZksQAvD_BwE" target="_blank">
 							<!-- source: https://unsplash.com/photos/white-and-blue-jellyfish-in-water-5T3dcr0IE-U -->
-							<img class="campaign2-center-mg" src="jelly_mg.jpg" alt="img">
+							<img class="campaign2-center-mg" src="img-mg/jelly_mg.jpg" alt="pinkish jellyfish" loading="lazy">
 							<!-- soucre: http://www.bagitnyc.org/plastic-bagss-impact-to-wildlife/ -->
-							<img class="campaign2-center-mg" src="plastic_mg.jpg" alt="img">
+							<img class="campaign2-center-mg" src="img-mg/plastic_mg.jpg" alt="turtle eating plastic bag" loading="lazy">
 							<!-- source:https://unsplash.com/photos/a-plastic-bag-floating-on-top-of-a-body-of-water-bN_pgc53NO4 -->
-							<img class="campaign2-center-mg" src="bag_mg.jpg" alt="img">
+							<img class="campaign2-center-mg" src="img-mg/bag_mg.jpg" alt="floating plastic bag" loading="lazy">
 						</a>
 						
 				</div>
@@ -194,30 +196,36 @@
 				<div class="container">
 					
 					<!-- form for receving further info-->
-					<form>
+					<form onsubmit="return validateForm()" >
 						<div class="row">
 							<div class="col">
-							  <input type="text" class="form-control" placeholder="First name">
+							  <input type="text" id="fname" class="form-control" placeholder="First name">
+							  <span id="fname-error" class="error-message"></span>			
 							</div>
 							<div class="col">
-							  <input type="text" class="form-control" placeholder="Last name">
+							  <input type="text" id="lname" class="form-control" placeholder="Last name">
+							  <span id="lname-error" class="error-message"></span>
 							</div>
 						</div>	
 						<div class="input-mg">
 							<div class="col">
-							  <input type="text" class="form-control" placeholder="Email Address">
+							  <input type="text" id="email" class="form-control" placeholder="Email Address">
+							  <span id="email-error" class="error-message"></span>
 							</div>
 						</div>
-						
-							<select class="form-select form-select-sm" aria-label="Small select example">
+						<div>
+							<select id="country" class="form-select form-select-sm" aria-label="Small select example">
 							  <option selected>Choose country</option>
 							  <option value="1">Ireland</option>
 							  <option value="2">UK</option>
 							  <option value="3">Canada</option>
 							</select>
+							<span id="country-error" class="error-message"></span>
+						</div>	
 						<div class="custom-control custom-checkbox">
 							<input type="checkbox" class="custom-control-input" id="customCheck1">
 							<label class="custom-control-label" for="customCheck1">Check to agree for privacy policy</label>
+							<span id="agree-error" class="error-message"></span>
 						</div>
 						<div class="submit-mg">
 							<input class="btn btn-primary form-btn-mg" type="submit" value="Submit">
@@ -233,10 +241,10 @@
 			<img class="logo" src="websiteIcon.png" alt="logo">
 		 <!-- list of links to important resources-->
 			 <ul>
-				<li> <a href="#">link one</a></li>
-				<li> <a href="#">link two</a></li>
-				<li> <a href="#">link three</a></li>
-				<li> <a href="#">link four</a></li>
+				<li> <a href="https://www.unep.org/topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-14" target="_blank">UN Environment Programme</a></li>
+				<li> <a href="https://globalgoals.org/goals/14-life-below-water/" target="_blank">The Global Goals</a></li>
+				<li> <a href="https://www.youtube.com/watch?v=rzSBtx_bZc4" target="_blank" >UN Sustainable Development Goals - DEEP DIVE</a></li>
+				<li> <a href="https://www.sciencefocus.com/future-technology/can-humans-live-under-the-sea-experiment-deep" target="_blank" >Can humans live under the sea?</a></li>
 			</ul>
 		</div>
 		

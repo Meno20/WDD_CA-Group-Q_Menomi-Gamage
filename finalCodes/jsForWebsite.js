@@ -28,6 +28,20 @@ if (currentPage=="home_HandeEdaOzdemir.html"){
 		
 }
 
+// Threats and What we can do page JS -- MENOMI GAMAGE -- 
+if (currentPage=="threats_MenomiGamage.html"){
+	const title = document.getElementById("changing-heading"); //identify the targeted element by the id
+//declare a constant called title
+	title.addEventListener("mouseover", () => {//when mouse hover over title the text is changed 
+		title.textContent = "Discover the main threats affecting our Oceans";
+	});
+	title.addEventListener("mouseout", () => {// change text back to original when not hovering
+		title.textContent = "Beneath the Surface, Above the Crisis";
+  });
+	
+}
+ 
+// FORM VALIDATION IN WHAT WE CAN DO PAGE -- MG--  
 if (currentPage=="WhatWeCanDo_MenomiGamage.html"){
 	
 		// Validate a single field
@@ -44,7 +58,7 @@ if (currentPage=="WhatWeCanDo_MenomiGamage.html"){
 			return true;
 		}
 	}
-
+// source:https://www.geeksforgeeks.org/javascript/form-validation-using-javascript/
 	function validateForm() {
 		const firstName = document.getElementById("fname");
 		const lastName = document.getElementById("lname");
@@ -67,13 +81,13 @@ if (currentPage=="WhatWeCanDo_MenomiGamage.html"){
 
 		if (!validateField(email, emailErr, (email.value === "" || !email.value.includes("@") || !email.value.includes(".")), "Please enter a valid email.")) isValid = false;
 
-		if (!validateField(coun, counErr, coun.value === "", "Please select a country.")) isValid = false;
+		if (!validateField(coun, counErr, coun.value === "", "Please select a country.")) isValid = false; //not working
 
 		if (!validateField(agree, agreeErr, !agree.checked, "Please agree to the Privacy Policy.")) isValid = false;
 
 		if (isValid) {
 			alert("Form submitted successfully!");
-			return true; // Allows page reload
+			return true; // Allows page to reload
 		}
 		return false;
 	}
@@ -107,11 +121,8 @@ if (currentPage=="WhatWeCanDo_MenomiGamage.html"){
 		});
 	};
 
-
-
-
 }
-
+// -- END MENOMI GAMAGE -- 
 
 
 
